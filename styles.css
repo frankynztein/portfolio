@@ -1,0 +1,297 @@
+/* Variables */
+:root {
+  /* Colors */
+  --red: #C84630;
+  --pale-white: #FDF4E3;
+  /* --gold-yellow: #F9B949; */
+  --gold-yellow: #976207;
+  --light-brown: #A7856A;
+  --pastel-green: #D6E8D3;
+  --white: #ffffff;
+
+  /* Breakpoints */
+
+  --xs: 376px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  background-color: var(--pale-white);
+  box-sizing: border-box;
+  /* font-size: 1.2rem; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 5rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 4rem; */
+
+}
+.nav-menu {
+  font-size: 1.125rem;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu ul li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-menu ul li:hover {
+  color: var(--gold-yellow);
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold-yellow);
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+/* Main */
+.main {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.main .not-my-passion {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+  }
+  
+  .main h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+}
+
+.main h2 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 5rem;
+  font-size: 2.3rem;
+  margin-bottom: 5rem;
+}
+
+.main .underline {
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 3px;
+}
+
+.arrow-down img {
+  /* Posición inicial */
+  position: relative;
+  animation: move 1s infinite ease-in-out; /* Nombre, duración, repeticiones, suavizado */
+}
+
+@keyframes move {
+  0%, 100% { 
+    top: 0px;
+  }
+  50% { 
+    top: 20px;
+  }
+}
+
+/* Titles */
+.about h2,
+.projects h2,
+.contact h2 {
+  font-size: 5rem;
+  color: var(--gold-yellow);
+}
+
+/* About */
+.about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about h2 {
+  margin-bottom: 5rem;
+}
+.about p {
+  font-size: 1.8rem;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  gap: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.project-description {
+  flex: 1;
+  width: 50%;
+  margin: auto 0;
+}
+
+.project-description h2 {
+  margin-bottom: 5rem;
+}
+
+.project-description p {
+  font-size: 1.8rem;
+}
+
+.project-cards {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-cards article {
+  background-color: var(--white);
+  /* box-shadow: 0px 2px 5px 0px rgba(0,0,0,.5); */
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.project-cards article img {
+  width: 300px
+}
+
+.project-card-info {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.project-cards a {
+  color: var(--gold-yellow);
+  font-weight: 600;
+}
+
+/* Contact */
+.contact h2 {
+  margin-bottom: 5rem;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5rem;
+}
+
+/* Footer */
+.footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .nav-menu ul {
+    gap: 1rem;
+    flex-wrap: nowrap;
+  }
+
+  .main h1 {
+    font-size: 8rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-cards article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-cards article img {
+    width: 100%;
+  }
+}

@@ -19,27 +19,6 @@
   --xxl: 1400px;
 }
 
-/* Variables */
-:root {
-  /* Colors */
-  --red: #C84630;
-  --pale-white: #FDF4E3;
-  /* --gold-yellow: #F9B949; */
-  --gold-yellow: #976207;
-  --light-brown: #A7856A;
-  --pastel-green: #D6E8D3;
-  --white: #ffffff;
-
-  /* Breakpoints */
-
-  --xs: 376px;
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-  --xxl: 1400px;
-}
-
 *,
 *:before,
 *:after {
@@ -135,8 +114,9 @@ body {
 }
 
 .not-my-passion h1 {
-  font-family: "Honk", monospace;
-  font-size: 5rem;
+  font-family: "Bungee Spice", monospace;
+  /* font-family: "Honk", monospace; */
+  font-size: 4rem;
   text-align: center;
   line-height: 4rem;
   margin-bottom: 30px;
@@ -234,7 +214,7 @@ body {
   }
 
   .not-my-passion h1 {
-    font-family: "Honk";
+    font-family: "Honk", monospace;
     font-size: 5rem;
     text-align: center;
     line-height: 4rem;

@@ -115,7 +115,6 @@ body {
 
 .not-my-passion h1 {
   font-family: "Bungee Spice", monospace;
-  /* font-family: "Honk", monospace; */
   font-size: 4rem;
   text-align: center;
   line-height: 4rem;
@@ -205,12 +204,12 @@ body {
 }
 
 .header {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 @media screen and (min-width: 576px) {
   .header {
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .not-my-passion h1 {
@@ -237,7 +236,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header {
-    background-color: red;
+    /* background-color: red; */
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -274,7 +273,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .header {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
   }
 
   .not-my-passion h1 {
@@ -289,7 +288,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header {
-    background-color: green;
+    /* background-color: green; */
   }
 
 }

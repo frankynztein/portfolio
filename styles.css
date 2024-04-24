@@ -25,7 +25,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  text-decoration: none;
 }
 
 a {
@@ -53,7 +52,7 @@ body {
 @media screen and (max-width: 576px) {
   .main h1 {
     font-size: 5rem;
-    line-height: 4rem;
+    line-height: 2rem;
   }
 }
 
